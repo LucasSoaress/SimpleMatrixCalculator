@@ -8,18 +8,27 @@ namespace Simple_Matrix_Calculator
 {
     class Program : matrix
     {
+        /// <summary>
+        /// Instanciando a própria classe para se usar os métodos 
+        /// </summary>
          public static Program p = new Program();
 
+        /// <summary>
+        /// Chama o método do menu
+        /// </summary>
+        /// <param name="args"></param>
         static void Main(string[] args)
         {
-            
             p.menu();
         }
 
+        /// <summary>
+        /// Desenha o menu no console
+        /// </summary>
         public void menu()
         {
-            //Console.BufferWidth = Console.WindowWidth = 81;
-            //Console.BufferHeight = Console.WindowHeight = 25;
+            Console.BufferWidth = Console.WindowWidth = 81;
+            Console.BufferHeight = Console.WindowHeight = 25;
             Console.ForegroundColor = ConsoleColor.Green;
             Console.Clear();
             Console.WriteLine("╒══════════════════════════════════════════════════════════════════════════════╕");
@@ -43,11 +52,11 @@ namespace Simple_Matrix_Calculator
             Console.WriteLine("║                                                                              ║");
             Console.WriteLine("║  S -> Matrix Subtraction                                                     ║");
             Console.WriteLine("║  A -> Matrix Additon                                                         ║");
-            Console.WriteLine("║  X -> about program                                                          ║");
-            Console.WriteLine("║  Q -> to quit                                                                ║");
+            Console.WriteLine("║  X -> About program                                                          ║");
+            Console.WriteLine("║  Q -> Quit                                                                   ║");
             Console.WriteLine("║                                                                              ║");
             Console.Write("╘══════════════════════════════════════════════════════════════════════════════╛");
-           // Console.SetCursorPosition(77, 23);
+            Console.SetCursorPosition(77, 23);
             ConsoleKey currentOption = Console.ReadKey().Key;
             Console.Clear();
             switch (currentOption)
@@ -74,6 +83,9 @@ namespace Simple_Matrix_Calculator
             }
         }
 
+        /// <summary>
+        /// Desenha tela de créditos no console
+        /// </summary>
         static private void credits()
         {
            // Console.BufferWidth = Console.WindowWidth = 81;
@@ -99,9 +111,9 @@ namespace Simple_Matrix_Calculator
             Console.WriteLine("║                                                                              ║");
             Console.WriteLine("║                                                                              ║");
             Console.WriteLine("║                                                                              ║");
-            Console.WriteLine("║  C -> calculator matrix                                                      ║");
-            Console.WriteLine("║  H -> main menu                                                              ║");
-            Console.WriteLine("║  Q -> to quit                                                                ║");
+            Console.WriteLine("║                                                                              ║");
+            Console.WriteLine("║  H -> Main Menu                                                              ║");
+            Console.WriteLine("║  Q -> Quit                                                                   ║");
             Console.WriteLine("║                           CRIADO POR LUCAS SOARES                            ║");
             Console.Write("╘══════════════════════════════════════════════════════════════════════════════╛");
            // Console.SetCursorPosition(77, 23);

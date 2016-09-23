@@ -4,3 +4,9 @@ C:\Users\LUCAS\Desktop\NAVE Trabalhos\Projetos Visual Studio\Simple Matrix Calcu
 C:\Users\LUCAS\Desktop\NAVE Trabalhos\Projetos Visual Studio\Simple Matrix Calculator\obj\Debug\Simple Matrix Calculator.csprojResolveAssemblyReference.cache
 C:\Users\LUCAS\Desktop\NAVE Trabalhos\Projetos Visual Studio\Simple Matrix Calculator\obj\Debug\Simple Matrix Calculator.exe
 C:\Users\LUCAS\Desktop\NAVE Trabalhos\Projetos Visual Studio\Simple Matrix Calculator\obj\Debug\Simple Matrix Calculator.pdb
+C:\Users\Lucas.Soares\Desktop\GitHub\SimpleMatrixCalculator\Simple Matrix Calculator\bin\Debug\Simple Matrix Calculator.exe.config
+C:\Users\Lucas.Soares\Desktop\GitHub\SimpleMatrixCalculator\Simple Matrix Calculator\obj\Debug\Simple Matrix Calculator.exe
+C:\Users\Lucas.Soares\Desktop\GitHub\SimpleMatrixCalculator\Simple Matrix Calculator\obj\Debug\Simple Matrix Calculator.pdb
+C:\Users\Lucas.Soares\Desktop\GitHub\SimpleMatrixCalculator\Simple Matrix Calculator\bin\Debug\Simple Matrix Calculator.exe
+C:\Users\Lucas.Soares\Desktop\GitHub\SimpleMatrixCalculator\Simple Matrix Calculator\bin\Debug\Simple Matrix Calculator.pdb
+C:\Users\Lucas.Soares\Desktop\GitHub\SimpleMatrixCalculator\Simple Matrix Calculator\obj\Debug\Simple Matrix Calculator.csprojResolveAssemblyReference.cache

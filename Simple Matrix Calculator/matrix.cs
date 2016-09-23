@@ -8,9 +8,12 @@ namespace Simple_Matrix_Calculator
 {
     class matrix
     {
+        /// <summary>
+        /// Faz a soma das matrizes
+        /// </summary>
         public static void matrixAddition()
         {
-            titulo("Soma de Matrizes aperte [ H ] -> Menu Principal | [ Q ] -> Fechar", "Digite o número de linhas e colunas");
+            titulo(" --------- SOMA DE MATRIZES ------- " + "\n" + "Aperte [ H ] -> Menu Principal | [ Q ] -> Fechar", "Digite o número de linhas e colunas");
             //escolha();
             try
             {
@@ -19,6 +22,7 @@ namespace Simple_Matrix_Calculator
                 n = Convert.ToInt32(Console.ReadLine());
                 int[,] A = new int[m, n];
 
+                Console.Clear();
                 Console.WriteLine("Enter the First Matrix : ");
                 for (i = 0; i < m; i++)
                 {
@@ -26,17 +30,6 @@ namespace Simple_Matrix_Calculator
                     {
                         A[i, j] = int.Parse(Console.ReadLine());
                     }
-                }
-
-                Console.WriteLine("");
-                Console.WriteLine("First Matrix : ");
-                for (i = 0; i < m; i++)
-                {
-                    for (j = 0; j < n; j++)
-                    {
-                        Console.Write(A[i, j] + "\t");
-                    }
-                    Console.WriteLine();
                 }
 
                 int[,] B = new int[m, n];
@@ -50,6 +43,20 @@ namespace Simple_Matrix_Calculator
                         B[i, j] = int.Parse(Console.ReadLine());
                     }
                 }
+
+                Console.Clear();
+                Console.WriteLine("");
+                Console.WriteLine("First Matrix : ");
+                for (i = 0; i < m; i++)
+                {
+                    for (j = 0; j < n; j++)
+                    {
+                        Console.Write(A[i, j] + "\t");
+                    }
+                    Console.WriteLine();
+                }
+
+                
 
                 Console.WriteLine("");
                 Console.WriteLine("Second Matrix : ");
@@ -92,15 +99,16 @@ namespace Simple_Matrix_Calculator
 
         }
 
+        /// <summary>
+        /// Faz a subtração das matrizes
+        /// </summary>
         public static void matrixSubtraction()
         {
             try
             {
                 int m, n, i, j;
 
-                Console.WriteLine("The Matrix Subtraction");
-                Console.WriteLine("");
-                Console.WriteLine("Enter number of rows and columns of the matrix: ");
+                titulo("Subtração de Matrizes " + "\n" + "Aperte [ H ] -> Menu Principal | [ Q ] -> Fechar", "Digite o número de linhas e colunas");
 
                 m = Convert.ToInt32(Console.ReadLine());
                 n = Convert.ToInt32(Console.ReadLine());
@@ -180,6 +188,9 @@ namespace Simple_Matrix_Calculator
             }
         }
 
+        /// <summary>
+        /// Espera por resposta do usuário para executar fuñção
+        /// </summary>
         private static void esperar()
         {
             Console.WriteLine("Aperter X para fechar ou N para calcular uma nova matriz");
@@ -190,6 +201,7 @@ namespace Simple_Matrix_Calculator
                     Environment.Exit(1);
                     break;
                 case ConsoleKey.N:
+                    Console.Clear();
                     matrixSubtraction();
                     break;
                 default:
@@ -199,11 +211,20 @@ namespace Simple_Matrix_Calculator
             }
         }
 
+        /// <summary>
+        /// Formatação de título
+        /// </summary>
+        /// <param name="primeiroTitulo">Inserir o primeiro titulo</param>
+        /// <param name="segundoTitulo">Inserir o segundo titulo</param>
         private static void titulo(String primeiroTitulo, String segundoTitulo)
         {
             Console.WriteLine("\n" +primeiroTitulo + "\n" + "" + "\n" + segundoTitulo + "\n");
         }
 
+
+        /// <summary>
+        /// Mostra mensagem de erro, e mostra teclas para se apertar
+        /// </summary>
         private static void error()
         {
             Console.Clear();
@@ -211,6 +232,10 @@ namespace Simple_Matrix_Calculator
             escolha();
         }
 
+
+        /// <summary>
+        /// Escolha de tecla para função
+        /// </summary>
         private static void escolha()
         {
             ConsoleKey currentOption = Console.ReadKey().Key;
